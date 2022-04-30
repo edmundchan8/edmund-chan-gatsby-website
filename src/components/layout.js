@@ -9,7 +9,7 @@ import {
     siteTitle
  } from './layout.module.css'
 
-const Layout = ( { pageTitle, children }) => {
+const Layout = ( { pageTitle, loggedIn, children }) => {
     const data = useStaticQuery(graphql`
         query {
           site {
@@ -19,6 +19,11 @@ const Layout = ( { pageTitle, children }) => {
           }
         }
         `)
+
+    let text = "This is some text from a const";
+    if (loggedIn){
+        text = "The text has been changed";
+    }
     return (
         <div className={container}>
             <title>{ pageTitle} | { data.site.siteMetadata.title }</title>
@@ -34,6 +39,7 @@ const Layout = ( { pageTitle, children }) => {
                 </ul>
             </nav>
             <h2 className={heading}>{ pageTitle }</h2>
+            { text }
             <p>{ children }</p>
         </div>
      )
