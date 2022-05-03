@@ -30,7 +30,8 @@ function NewsApi() {
                 pageSize: "30"
             },
             headers: {
-                'X-Api-Key': '5831942ed45a4706a7c5d3767b66d544'
+                'X-Api-Key': '5831942ed45a4706a7c5d3767b66d544',
+                'Access-Control-Allow-Origin': '*'
             }
         };
     
