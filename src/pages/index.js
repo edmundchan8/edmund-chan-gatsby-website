@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 
 function index() {
+
   return (
     <Layout pageTitle="Edmund's Website">
       <StaticImage
