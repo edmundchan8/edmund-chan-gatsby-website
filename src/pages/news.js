@@ -7,7 +7,7 @@ function index() {
   return (
   <div>
     <Layout pageTitle="News API Page">
-      <p>News API</p>
+      <p>Playing with a <a href="https://newsapi.org/docs">news API</a> but this only works locally unless I pay for it</p>
       <NewsApi />
     </Layout>
   </div>

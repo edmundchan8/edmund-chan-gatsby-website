@@ -20,10 +20,10 @@ const Layout = ( { pageTitle, loggedIn, children }) => {
         }
         `)
 
-    let text = "This is some text from a const";
-    if (loggedIn){
-        text = "The text has been changed";
-    }
+    // let text = "This is some text from a const";
+    // if (loggedIn){
+    //     text = "The text has been changed";
+    // }
     return (
         <div className={container}>
             <title>{ pageTitle} | { data.site.siteMetadata.title }</title>
@@ -44,7 +44,7 @@ const Layout = ( { pageTitle, loggedIn, children }) => {
                 </ul>
             </nav>
             <h2 className={heading}>{ pageTitle }</h2>
-            { text }
+            {/* { text } */}
             <p>{ children }</p>
         </div>
      )
