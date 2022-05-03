@@ -22,7 +22,6 @@ function NewsApi() {
         const options = {
             method: 'GET',
             url: 'https://newsapi.org/v2/everything',
-            withCredentials: false,
             params: {
                 q: newQuery,
                 searchIn: "content",
@@ -31,9 +30,7 @@ function NewsApi() {
                 pageSize: "30"
             },
             headers: {
-                'X-Api-Key': '5831942ed45a4706a7c5d3767b66d544',
-                'Authorization': '5831942ed45a4706a7c5d3767b66d544',
-                'Access-Control-Allow-Origin': '*'
+                'X-Api-Key': '5831942ed45a4706a7c5d3767b66d544'
             }
         };
     
